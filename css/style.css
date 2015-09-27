@@ -1,6 +1,7 @@
 .container{
 	margin: auto;
 	padding: auto;
+	padding-top: 10px;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 	height:700px;
 	border:1px solid black;
 	background-color: white;
+	box-shadow: 5px 5px 5px #888888;
 }
 
 #wysiwyg-cp{
