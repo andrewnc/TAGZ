@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type="text/javascript" src="js/editor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body onLoad="iFrameOn();">
+<div class='container'>
+<div class="navbar">
+  <h2 class="text-center">Tagz</h2>
+  <form action="my_parse_file.php" name="myform" id="myform" method="post">
+  <!-- <p>Entry Title: <input name="title" id="title" type="text" size="80" maxlength="80" /></p>
+  <p>Entry Body:<br> -->
+    <p>
+      <div id="wysiwyg-cp" class="col-md-10">
+        <input class="btn btn-primary" type="button" onClick="insert_iframe()" value="Insert">
+        <input class="btn btn-primary" type="button" onClick="change_tag()" value="Change">
+        <input class="btn btn-primary" type="button" onClick="iBold()" value="B"> 
+        <input class="btn btn-primary" type="button" onClick="iUnderline()" value="U">
+        <input class="btn btn-primary" type="button" onClick="iItalic()" value="I">
+        <input class="btn btn-primary" type="button" onClick="iFontSize()" value="Text Size">
+        <input class="btn btn-primary" type="button" onClick="iForeColor()" value="Text Color">
+        <input class="btn btn-primary" type="button" onClick="iHorizontalRule()" value="HR">
+        <input class="btn btn-primary" type="button" onClick="iUnorderedList()" value="UL">
+        <input class="btn btn-primary" type="button" onClick="iOrderedList()" value="OL">
+        <input class="btn btn-primary" type="button" onClick="iLink()" value="Link">
+        <input class="btn btn-primary" type="button" onClick="iUnLink()" value="UnLink">
+        <input class="btn btn-primary" type="button" onClick="iImage()" value="Image">
+        <input class="btn btn-primary" type="button" onClick="displaySlider()" value="DISPLAY">
+      </div>
+
+</div>
+
+<div class="col-md-8">
+  <!-- Hide(but keep)your normal textarea and place in the iFrame replacement for it -->
+  <textarea style="display:none;" name="myTextArea" id="myTextArea" cols="100" rows="14"></textarea>
+  <iframe name="richTextField" id="richTextField" class="col-md-12"><input type="button" value="TEST"/>sdadfsad</iframe>
+   <!-- style="border:#000000 1px solid; width:700px; height:300px;" -->
+  <!-- End replacing your normal textarea -->
+</div>
+<div id="tagz"class="col-md-4">
+  <p>here is where the stuff will slide</p>
+</div>
+
+
+</p>
+<br /><br />
+<!-- <input name="myBtn" type="button" value="Submit Data" onClick="javascript:submit_form();"/> -->
+</form>
+</div>
+
+</body>
+</html>

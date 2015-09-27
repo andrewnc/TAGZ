@@ -1,0 +1,39 @@
+.container{
+	margin: auto;
+	padding: auto;
+}
+
+body {
+    background-color: lightgrey;
+}
+.text_edit{
+	width: 500px;
+	height: 300px;
+	resize: none;
+}
+
+#view_text{
+	width: 500 px;
+}
+
+#richTextField{
+	height:700px;
+	border:1px solid black;
+	background-color: white;
+}
+
+#wysiwyg-cp{
+	padding-bottom: 10px;
+}
+
+.navbar{
+	background-color: white;
+	float:none;
+}
+
+#tagz{
+	display: none;
+	height:700px;
+	background-color: white;
+	border:1px solid black;
+}
