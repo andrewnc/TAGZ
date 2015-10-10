@@ -1,4 +1,8 @@
-
+$(function() {
+    $the_iframe = $('#richTextField').contents().find('body');
+    $the_iframe.append('<div id="content"></div>');
+    $the_iframe = $('#richTextField').contents().find('#content');
+});
 function iFrameOn(){
 	richTextField.document.designMode = 'On';
 }
@@ -60,4 +64,8 @@ function change_tag(){
 }
 function displaySlider(){
   	$( "#tagz" ).toggle( "slide" );
+}
+
+function submit_changes(){
+	$the_iframe.append("SUBMIT");
 }
